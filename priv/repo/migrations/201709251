@@ -1,0 +1,7 @@
+defmodule Microblog.Migrations.UpdateMessage do
+  use Ecto.Migration
+
+  alter table("messages") do
+    remove :date
+  end
+end
